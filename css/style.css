@@ -9,18 +9,21 @@ body{
 *{
     box-sizing: border-box;
 }
-img{
-    width: 500px;
-    height: 500px;
+.div-top .img-top{
+    position: fixed;
+    bottom: 45%;
+    right: 50%;
 }
-.container{
-    position: relative;
+
+.div-bottom .img-bottom{
+    position: fixed;
+    top: 45%;
+    left: 50%;
 }
 .container .linha{
     width: 385px;
     height: 1px;
     background: hsla(0, 0%, 59%, 0.219);
-    position: absolute;
 }
 
 .container .img-card{
@@ -37,11 +40,15 @@ img{
     margin: -50px;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+}
+
 .container .card{
     height: 420px;
     width: 385px;
     background-color: white;
-    margin: 0 auto;
     text-align: center;
     border-radius: 20px;
     position: relative;
@@ -50,8 +57,19 @@ img{
 .container .card .name{
     font-size: 20px;
     font-weight: 700;
-    padding: 20px 0 0 0;
-    margin: 30px 0 0 0;
+    margin: 80px 0 0 0;
+}
+
+.container .card .age{
+    color: hsl(227, 10%, 46%);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container .card .city{
+    color: hsl(227, 10%, 46%);
+    font-size: 18px;
+    font-weight: 400;
 }
 .footer-follow p{
     font-weight: bold;
@@ -61,7 +79,7 @@ img{
 
 .footer-follow span{
     font-weight: 400;
-    color: hsl(0, 0%, 59%);
+    color: hsl(227, 10%, 46%);
     font-size: 14px;
 }
 .container .footer{
@@ -72,12 +90,6 @@ img{
 .container .footer-follow{
     margin: 20px;
 }
-
-.img-bottom{
-    position: absolute;
-    left: 75%;
-}
-
 
 .attribution { 
     font-size: 11px; text-align: center;
