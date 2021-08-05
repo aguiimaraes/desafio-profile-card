@@ -19,6 +19,7 @@ body{
     position: fixed;
     top: 45%;
     left: 50%;
+    
 }
 .container .linha{
     width: 385px;
@@ -27,8 +28,9 @@ body{
 }
 
 .container .img-card{
-    height: 140px;
-    width: 385px;
+    /*height: 140px;
+    width: 385px; */
+    width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
@@ -41,8 +43,13 @@ body{
 }
 
 .container{
+    position: absolute;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 97%;
+    width: 97%;
+    z-index: 99;
 }
 
 .container .card{
